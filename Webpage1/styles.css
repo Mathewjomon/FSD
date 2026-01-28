@@ -1,0 +1,59 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #e9f5ff;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 50px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 12px;
+
+}
+
+header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+h1 {
+  font-size: 2em;
+  color: #004aad;
+}
+
+h2 {
+  color: #007acc;
+  font-weight: 400;
+  margin-top: 10px;
+}
+
+.content {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.profile-pic {
+  width: 200px;
+  border-radius: 12px;
+  
+}
+
+.about {
+  flex: 1;
+  line-height: 1.6;
+}
+
+.contact a {
+  color: #007acc;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.contact a:hover {
+  text-decoration: underline;
+}
