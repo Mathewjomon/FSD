@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FlyEasy - Travel Deals</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Sticky Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+
+      <!-- Logo -->
+      <a class="logo" href="#">FlyEasy</a>
+
+      <!-- CSS-only Hamburger (checkbox technique) -->
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" />
+      <label for="nav-toggle" class="hamburger" aria-label="Open menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+
+      <!-- Navigation -->
+      <nav class="nav">
+        <ul class="nav-links">
+          <li><a href="#deals">Deals</a></li>
+          <li><a href="#features">Flights</a></li>
+          <li><a href="#pricing">Hotels</a></li>
+          <li><a href="#footer">Support</a></li>
+        </ul>
+      </nav>
+
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <main>
+    <section class="hero" id="deals">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <p class="badge">Limited Time Offer</p>
+          <h1>50% Off Asia Flights This Week</h1>
+          <p class="subheading">
+            Hurry! Seats are filling fast. Grab the deal before it ends.
+          </p>
+
+          <!-- Optional urgency timer representation (visual badge) -->
+          <div class="countdown" aria-label="Countdown badge">
+            <div class="countdown-box">
+              <span class="num">02</span>
+              <span class="label">Days</span>
+            </div>
+            <div class="countdown-box">
+              <span class="num">18</span>
+              <span class="label">Hours</span>
+            </div>
+            <div class="countdown-box">
+              <span class="num">45</span>
+              <span class="label">Min</span>
+            </div>
+          </div>
+
+          <a class="btn" href="#pricing">Book Now</a>
+        </div>
+
+        <div class="hero-card" aria-label="Deal summary card">
+          <h2>Top Destinations</h2>
+          <ul class="deal-list">
+            <li>Bangkok • from ₹14,999</li>
+            <li>Singapore • from ₹18,499</li>
+            <li>Bali • from ₹19,999</li>
+          </ul>
+          <p class="small-note">*Prices are indicative. Terms apply.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+      <div class="container">
+        <h2 class="section-title">Why FlyEasy?</h2>
+        <p class="section-subtitle">Comfort, savings, and flexibility—built for travelers.</p>
+
+        <div class="grid">
+          <article class="card">
+            <div class="icon" aria-hidden="true">✈️</div>
+            <h3>Non-stop Routes</h3>
+            <p>Direct flights to popular Asia cities with fewer delays and faster travel.</p>
+          </article>
+
+          <article class="card">
+            <div class="icon" aria-hidden="true">🍽️</div>
+            <h3>Free Meals + Baggage</h3>
+            <p>Enjoy complimentary meals and generous baggage inclusions on selected routes.</p>
+          </article>
+
+          <article class="card">
+            <div class="icon" aria-hidden="true">🧾</div>
+            <h3>Flexible Changes</h3>
+            <p>Easy reschedule options with clear policies—travel confidently.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="pricing" id="pricing">
+      <div class="container">
+        <h2 class="section-title">Choose Your Fare</h2>
+        <p class="section-subtitle">Simple plans for every type of traveler.</p>
+
+        <div class="pricing-wrap">
+          <article class="price-card">
+            <h3>Economy Fare</h3>
+            <p class="price">₹9,999 <span>/trip</span></p>
+            <ul class="list">
+              <li>Seat selection (basic)</li>
+              <li>7 kg cabin baggage</li>
+              <li>Standard support</li>
+              <li>Change fee applies</li>
+            </ul>
+            <a class="btn-outline" href="#footer">Select Economy</a>
+          </article>
+
+          <article class="price-card featured">
+            <div class="recommend">Recommended</div>
+            <h3>Premium Comfort</h3>
+            <p class="price">₹14,999 <span>/trip</span></p>
+            <ul class="list">
+              <li>Priority boarding</li>
+              <li>15 kg baggage + meals</li>
+              <li>Preferred seats</li>
+              <li>Flexible changes*</li>
+            </ul>
+            <a class="btn" href="#footer">Select Premium</a>
+            <p class="small-note">*Based on fare rules.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer" id="footer">
+    <div class="container footer-grid">
+
+      <section>
+        <h3>Contact</h3>
+        <p>FlyEasy Airport Office, Terminal 2</p>
+        <p>Phone: +91 90000 00000</p>
+        <p>Email: support@flyeasy.com</p>
+      </section>
+
+      <section>
+        <h3>Social</h3>
+        <ul class="footer-links">
+          <li><a href="#">Twitter</a></li>
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">Instagram</a></li>
+        </ul>
+      </section>
+
+      <section>
+        <h3>Trust & Safety</h3>
+        <ul class="footer-links">
+          <li>✔ Certified Airline Partner</li>
+          <li>✔ Secure Payments Badge</li>
+          <li>✔ Safety Compliance Mark</li>
+        </ul>
+      </section>
+
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2026 FlyEasy. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
