@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Task Manager</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 60px;
+            background-color: #e6cbcb;
+        }
+
+        input {
+            padding: 8px;
+            width: 220px;
+        }
+
+        button {
+            padding: 8px 14px;
+            margin-left: 6px;
+            cursor: pointer;
+        }
+
+        li {
+            margin: 8px 0;
+            font-size: 18px;
+        }
+
+        .removeBtn {
+            margin-left: 12px;
+            background-color: rgb(203, 83, 107);
+            color: white;
+            border: none;
+            padding: 4px 8px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Daily Tasks</h2>
+
+    <input type="text" id="taskField" placeholder="Type a task">
+    <button onclick="addItem()">Add Task</button>
+
+    <ul id="list"></ul>
+
+    <script>
+        function addItem() {
+            let field = document.getElementById("taskField");
+            let text = field.value;
+
+            if (text === "") {
+                alert("Enter something first!");
+                return;
+            }
+
+            let item = document.createElement("li");
+            item.textContent = text;
+
+            let removeBtn = document.createElement("button");
+            removeBtn.textContent = "Remove";
+            removeBtn.className = "removeBtn";
+
+            removeBtn.onclick = function () {
+                item.remove();
+            };
+
+            item.appendChild(removeBtn);
+            document.getElementById("list").appendChild(item);
+
+            field.value = "";
+        }
+    </script>
+
+</body>
+</html>
